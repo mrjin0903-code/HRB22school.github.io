@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gb2312">
+<title>哈尔滨市第二十二中学— 官方网站</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "SimSun","宋体",serif;
+    background: #dce6f0;
+    color: #222;
+  }
+  table { border-collapse: collapse; }
+
+  /* 外框：老官网那种居中固定宽度 */
+  #wrap {
+    width: 780px;
+    margin: 0 auto;
+    background: #fff;
+    border-left: 1px solid #99b;
+    border-right: 1px solid #99b;
+  }
+
+  /* 顶部横幅 */
+  #topbar {
+    background: #1a3c6e;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 12px;
+  }
+  #topbar a { color: #cfdff6; text-decoration: underline; }
+
+  /* 校徽+校名区 */
+  #header {
+    background: linear-gradient(#1a3c6e,#2a5599);
+    color: #fff;
+    padding: 18px 20px 14px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  #header .badge {
+    width: 64px; height: 64px;
+    background: #fff;
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    color: #1a3c6e; font-weight: bold; font-size: 12px;
+    /* 虚构校徽：使用文字占位，可替换为图片 */
+    border: 2px solid #1a3c6e;
+  }
+  #header h1 { margin: 0; font-size: 22px; letter-spacing: 2px; }
+  #header .sub { font-size: 12px; opacity: .85; margin-top: 2px; }
+
+  /* 主导航 */
+  #nav {
+    background: #eee;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+  }
+  #nav td { padding: 6px 14px; font-size: 13px; }
+  #nav a { color: #003399; text-decoration: underline; }
+
+  /* 主体三栏（左 右 中） */
+  #main td { vertical-align: top; padding: 10px 12px; }
+
+  /* 左侧菜单 */
+  .side {
+    width: 170px;
+    background: #f4f7fb;
+    border-right: 1px solid #ccd;
+    font-size: 13px;
+  }
+  .side ul { margin: 0; padding: 0 0 0 16px; }
+  .side li { margin: 5px 0; }
+  .side a { color: #003399; text-decoration: underline; }
+
+  /* 正文区 */
+  .content { font-size: 14px; line-height: 1.75; }
+  .content h2 { font-size: 16px; margin: 0 0 8px; border-left: 4px solid #1a3c6e; padding-left: 8px; }
+  .content hr { border: none; border-top: 1px dashed #bbc; }
+
+  /* 右侧小栏 */
+  .right {
+    width: 180px;
+    font-size: 12px;
+    background: #f9fafc;
+    border-left: 1px solid #ccd;
+  }
+  .right .box { border: 1px solid #ccd; margin: 8px; padding: 6px 8px; }
+  .right .box b { display: block; margin-bottom: 4px; }
+
+  /* 页脚 */
+  #footer {
+    border-top: 1px solid #bbb;
+    background: #eee;
+    text-align: center;
+    font-size: 11px;
+    color: #555;
+    padding: 10px;
+    line-height: 1.6;
+  }
+  /* 不太对劲的东西：默认几乎看不见，hover才露一点 */
+  .off-note {
+    color: #fafafa;
+    cursor: default;
+    border-bottom: 1px dotted #ddd;
+  }
+  .off-note:hover { color: #900; }
+</style>
+</head>
+
+<body>
+<div id="wrap">
+
+  <!-- 顶部条 -->
+  <div id="topbar">
+    设为首页　｜　加入收藏　
+    <span style="float:right;">今天是：<script>document.write(new Date().toLocaleDateString());</script></span>
+  </div>
+
+  <!-- 头部 -->
+  <div id="header">
+    <div class="badge">廿二中</div>
+    <div>
+      <h1>哈尔滨市第二十二中学</h1>
+      <div class="sub">Harbin No.22 Middle School</div>
+    </div>
+  </div>
+
+  <!-- 导航栏 -->
+  <table id="nav" width="100%">
+    <tr>
+      <td><a href="#">首页</a></td>
+      <td><a href="school_info.html">学校概况</a></td>
+      <td><a href="#">组织机构</a></td>
+      <td><a href="#">教学科研</a></td>
+      <td><a href="#">德育之窗</a></td>
+      <td><a href="#">招生就业</a></td>
+      <td><a href="#">党团建设</a></td>
+      <td><a href="#">留言板</a></td>
+    </tr>
+  </table>
+
+  <!-- 主体 -->
+  <table id="main" width="100%">
+    <tr>
+
+      <!-- 左侧菜单 -->
+      <td class="side">
+        <br>
+        <b>· 学校概况</b>
+        <ul>
+          <li><a href="school_info.html">学校简介</a></li>
+          <li><a href="#">历史沿革</a></li>
+          <li><a href="#">领导班子</a></li>
+          <li><a href="#">校园风光</a></li>
+        </ul>
+        <b>· 教学资源</b>
+        <ul>
+          <li><a href="#">通知公告</a></li>
+          <li><a href="#">课程表下载</a></li>
+          <li><a href="#">校内文件</a></li>
+          <li><a href="#">成绩查询</a></li>
+        </ul>
+        <b>· 其它</b>
+        <ul>
+          <li><a href="#">校友录</a></li>
+          <li><a href="#">图书馆</a></li>
+          <li><a href="archive.html">档案室<span style="font-size:11px;color:#999">（施工中）</span></a></li>
+        </ul>
+      </td>
+
+      <!-- 中间内容 -->
+      <td class="content" width="*">
+        <h2>校园公告</h2>
+        <p>● <a href="#">关于开展冬季校园安全自查的通知</a>（2009-11-03）</p>
+        <p>● <a href="#">2008—2009学年第二学期期末考试安排</a>（2009-06-15）</p>
+        <p>● <a href="#">关于部分老旧校舍暂停开放使用的说明</a>（2008-10-07）</p>
+
+        <hr>
+
+        <h2>学校简介</h2>
+        <p>
+          哈尔滨市第二十二中学是一所拥有深厚历史底蕴的中学。
+          学校座落于城区东部，教学区与生活区分置，主教学楼建于上世纪八十年代，
+          实验楼、体育馆及老家属院分布于校园北侧与东侧……
+        </p>
+        <p>
+          多年来，学校坚持“严谨治学、求实创新”的校训，
+          为社会输送了大量合格毕业生。（<a href="school_info.html">详细阅读 »</a>）
+        </p>
+
+        <!-- 预埋的暗线：看起来像排版残骸 -->
+        <div style="margin-top:18px;border:1px dashed #ccc;padding:8px 10px;font-size:12px;color:#666;background:#fafbfd;">
+          <span class="off-note" title="这条不该还留着……">tmp/backup/class92_roll.txt 已从服务器移除（遗留索引未清理）</span>
+        </div>
+      </td>
+
+      <!-- 右侧边栏 -->
+      <td class="right">
+        <div class="box">
+          <b>校内电话</b>
+          校长室：0451-8xxx-xxx1<br>
+          教务科：0451-8xxx-xxx2<br>
+          档案室：<span style="color:#999">暂无分机</span>
+        </div>
+        <div class="box">
+          <b>友情链接</b>
+          <a href="#">哈尔滨市教育局</a><br>
+          <a href="#">道外区进修校</a>
+        </div>
+        <div class="box" style="border-color:#e88;">
+          <b style="color:#a00;">系统提示</b>
+          站内检索功能因升级暂时关闭。<br>
+          <span style="font-size:11px;color:#999;">（预计恢复：待定）</span>
+        </div>
+      </td>
+
+    </tr>
+  </table>
+
+  <!-- 页脚 -->
+  <div id="footer">
+    黑ICP备05010382号-3　哈尔滨市第二十二中学 版权所有<br>
+    © 2007—<span id="yr">2009</span>　地址：哈尔滨市道外区南驴路123号　邮编：150026
+    <br><br>
+    <!-- 第二根暗线：更新日期异常 -->
+    <span style="color:#ddd;">last build: 2009-12-18　webmaster：<span style="color:#eee;">web@hrb22ms.edu.cn</span></span>
+  </div>
+
+</div>
+
+<script>
+  // 页脚年份锁定在2009年，营造时间静止的异常感
+  document.getElementById("yr").textContent = "2009";
+
+  // 简单交互：午夜特效（凌晨0-5点访问时页面变暗）
+  if(new Date().getHours() >= 0 && new Date().getHours() < 5) {
+    document.body.style.backgroundColor = '#111';
+    document.body.style.color = '#ccc';
+  }
+</script>
+</body>
+</html>
+
